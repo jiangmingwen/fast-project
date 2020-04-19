@@ -1,0 +1,43 @@
+{
+  "name": "fast-assemble",
+  "version": "0.1.0",
+  "private": false,
+  "main": "lib/jay-package.umd.min.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "as": "cross-env use_analyzer=true npm run serve",
+    "ab": "cross-env use_analyzer=true npm run build",
+    "dev":"cross-env lib_mode=true vue-cli-service build --target lib --name jay-package --dest library/lib src/views/layout/index.js"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.5.3",
+    "core-js": "^3.6.4",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "register-service-worker": "^1.7.1",
+    "sortable": "^2.0.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.3.0",
+    "@vue/cli-plugin-pwa": "^4.3.0",
+    "@vue/cli-plugin-router": "^4.3.0",
+    "@vue/cli-plugin-vuex": "^4.3.0",
+    "@vue/cli-service": "^4.3.0",
+    "cross-env": "^7.0.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "style-resources-loader": "^1.3.3",
+    "vue-cli-plugin-style-resources-loader": "^0.1.4",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^3.7.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

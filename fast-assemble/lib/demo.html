@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>Layout demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./Layout.umd.js"></script>
+
+<link rel="stylesheet" href="./Layout.css">
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: Layout
+  }
+}).$mount('#app')
+</script>
